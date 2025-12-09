@@ -1,0 +1,434 @@
+
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{PAGE_TITLE}}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-black text-white antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl font-bold">{{LOGO_TEXT}}</div>
+                <button class="px-4 py-2 bg-green-400 text-black rounded-full font-medium hover:bg-green-300 transition">
+                    {{NAV_CTA_BUTTON}}
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                {{HERO_TITLE}}
+            </h1>
+            <p class="text-gray-400 text-lg sm:text-xl mb-8 max-w-2xl mx-auto">
+                {{HERO_SUBTITLE}}
+            </p>
+            <button class="px-8 py-3 bg-green-400 text-black rounded-full font-medium hover:bg-green-300 transition inline-flex items-center gap-2">
+                {{HERO_CTA_BUTTON}}
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+            <div class="mt-12 flex flex-wrap justify-center gap-8 text-sm text-gray-500">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="check-circle" class="w-4 h-4"></i>
+                    {{HERO_FEATURE_1}}
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="check-circle" class="w-4 h-4"></i>
+                    {{HERO_FEATURE_2}}
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="check-circle" class="w-4 h-4"></i>
+                    {{HERO_FEATURE_3}}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Cards -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4">{{FEATURES_TITLE}}</h2>
+            <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto">{{FEATURES_SUBTITLE}}</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature Card 1 -->
+                <div class="bg-gray-800/50 border border-gray-700 rounded-2xl p-8 hover:border-green-400/50 transition">
+                    <div class="w-12 h-12 bg-green-400/10 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="target" class="w-6 h-6 text-green-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">{{FEATURE_1_TITLE}}</h3>
+                    <p class="text-gray-400 mb-4">{{FEATURE_1_DESCRIPTION}}</p>
+                    <a href="#" class="text-green-400 hover:text-green-300 inline-flex items-center gap-1 text-sm font-medium">
+                        {{FEATURE_1_LINK}}
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div class="bg-gray-800/50 border border-gray-700 rounded-2xl p-8 hover:border-green-400/50 transition">
+                    <div class="w-12 h-12 bg-green-400/10 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="zap" class="w-6 h-6 text-green-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">{{FEATURE_2_TITLE}}</h3>
+                    <p class="text-gray-400 mb-4">{{FEATURE_2_DESCRIPTION}}</p>
+                    <a href="#" class="text-green-400 hover:text-green-300 inline-flex items-center gap-1 text-sm font-medium">
+                        {{FEATURE_2_LINK}}
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div class="bg-gray-800/50 border border-gray-700 rounded-2xl p-8 hover:border-green-400/50 transition">
+                    <div class="w-12 h-12 bg-green-400/10 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-green-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">{{FEATURE_3_TITLE}}</h3>
+                    <p class="text-gray-400 mb-4">{{FEATURE_3_DESCRIPTION}}</p>
+                    <a href="#" class="text-green-400 hover:text-green-300 inline-flex items-center gap-1 text-sm font-medium">
+                        {{FEATURE_3_LINK}}
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Testimonial -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <i data-lucide="quote" class="w-12 h-12 text-green-400 mx-auto mb-6"></i>
+            <blockquote class="text-2xl sm:text-3xl font-medium mb-8">
+                {{TESTIMONIAL_QUOTE}}
+            </blockquote>
+            <div class="flex items-center justify-center gap-3">
+                <div class="w-12 h-12 bg-gray-700 rounded-full"></div>
+                <div class="text-left">
+                    <div class="font-semibold">{{TESTIMONIAL_NAME}}</div>
+                    <div class="text-sm text-gray-400">{{TESTIMONIAL_ROLE}}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zig-Zag Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4">{{ZIGZAG_TITLE}}</h2>
+            <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto">{{ZIGZAG_SUBTITLE}}</p>
+
+            <!-- Block 1 - Image Left -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+                <div class="bg-gray-800 rounded-2xl overflow-hidden aspect-video">
+                    <img id="feature-img-1" src="https://placehold.co/600x400/1a1a1a/444444?text=Feature+1" alt="Feature" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-green-400/10 text-green-400 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i>
+                        {{ZIGZAG_BADGE_1}}
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-4">{{ZIGZAG_BLOCK_1_TITLE}}</h3>
+                    <p class="text-gray-400 mb-6">{{ZIGZAG_BLOCK_1_DESCRIPTION}}</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-300">{{ZIGZAG_BLOCK_1_BULLET_1}}</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-300">{{ZIGZAG_BLOCK_1_BULLET_2}}</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-300">{{ZIGZAG_BLOCK_1_BULLET_3}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Block 2 - Image Right -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="lg:order-2">
+                    <div class="bg-gray-800 rounded-2xl overflow-hidden aspect-video">
+                        <img id="feature-img-2" src="https://placehold.co/600x400/1a1a1a/444444?text=Feature+2" alt="Feature" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="lg:order-1">
+                    <div class="inline-flex items-center gap-2 bg-green-400/10 text-green-400 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                        <i data-lucide="trending-up" class="w-4 h-4"></i>
+                        {{ZIGZAG_BADGE_2}}
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-4">{{ZIGZAG_BLOCK_2_TITLE}}</h3>
+                    <p class="text-gray-400 mb-6">{{ZIGZAG_BLOCK_2_DESCRIPTION}}</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-300">{{ZIGZAG_BLOCK_2_BULLET_1}}</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-300">{{ZIGZAG_BLOCK_2_BULLET_2}}</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-300">{{ZIGZAG_BLOCK_2_BULLET_3}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">{{COMPARISON_TITLE}}</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Old Way -->
+                <div class="bg-gray-800/50 border border-gray-700 rounded-2xl p-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i data-lucide="x-circle" class="w-8 h-8 text-red-400"></i>
+                        <h3 class="text-2xl font-bold">{{COMPARISON_OLD_TITLE}}</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-gray-400">
+                            <i data-lucide="minus" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                            <span>{{COMPARISON_OLD_POINT_1}}</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-400">
+                            <i data-lucide="minus" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                            <span>{{COMPARISON_OLD_POINT_2}}</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-400">
+                            <i data-lucide="minus" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                            <span>{{COMPARISON_OLD_POINT_3}}</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-400">
+                            <i data-lucide="minus" class="w-5 h-5 mt-0.5 flex-shrink-0"></i>
+                            <span>{{COMPARISON_OLD_POINT_4}}</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- New Way -->
+                <div class="bg-gradient-to-br from-green-400/10 to-green-600/10 border border-green-400/30 rounded-2xl p-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i data-lucide="check-circle" class="w-8 h-8 text-green-400"></i>
+                        <h3 class="text-2xl font-bold">{{COMPARISON_NEW_TITLE}}</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                            <span>{{COMPARISON_NEW_POINT_1}}</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                            <span>{{COMPARISON_NEW_POINT_2}}</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                            <span>{{COMPARISON_NEW_POINT_3}}</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                            <span>{{COMPARISON_NEW_POINT_4}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4">{{PRICING_TITLE}}</h2>
+            <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto">{{PRICING_SUBTITLE}}</p>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Standard Plan -->
+                <div class="bg-gray-800/50 border border-gray-700 rounded-2xl p-8">
+                    <div class="mb-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i data-lucide="box" class="w-5 h-5 text-gray-400"></i>
+                            <h3 class="text-xl font-bold">{{PRICING_PLAN_1_NAME}}</h3>
+                        </div>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-4xl font-bold">{{PRICING_PLAN_1_PRICE}}</span>
+                            <span class="text-gray-400">{{PRICING_PLAN_1_PERIOD}}</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">{{PRICING_PLAN_1_DESCRIPTION}}</p>
+                    <button class="w-full py-3 bg-gray-700 hover:bg-gray-600 rounded-lg font-medium transition mb-6">
+                        {{PRICING_PLAN_1_CTA}}
+                    </button>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 flex-shrink-0"></i>
+                            <span class="text-sm">{{PRICING_PLAN_1_FEATURE_1}}</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 flex-shrink-0"></i>
+                            <span class="text-sm">{{PRICING_PLAN_1_FEATURE_2}}</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 flex-shrink-0"></i>
+                            <span class="text-sm">{{PRICING_PLAN_1_FEATURE_3}}</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 flex-shrink-0"></i>
+                            <span class="text-sm">{{PRICING_PLAN_1_FEATURE_4}}</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="bg-gradient-to-br from-green-400/10 to-green-600/10 border-2 border-green-400 rounded-2xl p-8 relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-green-400 text-black px-4 py-1 rounded-full text-sm font-bold">
+                        {{PRICING_POPULAR_BADGE}}
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i data-lucide="crown" class="w-5 h-5 text-green-400"></i>
+                            <h3 class="text-xl font-bold">{{PRICING_PLAN_2_NAME}}</h3>
+                        </div>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-4xl font-bold">{{PRICING_PLAN_2_PRICE}}</span>
+                            <span class="text-gray-400">{{PRICING_PLAN_2_PERIOD}}</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">{{PRICING_PLAN_2_DESCRIPTION}}</p>
+                    <button class="w-full py-3 bg-green-400 hover:bg-green-300 text-black rounded-lg font-medium transition mb-6">
+                        {{PRICING_PLAN_2_CTA}}
+                    </button>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 flex-shrink-0"></i>
+                            <span class="text-sm">{{PRICING_PLAN_2_FEATURE_1}}</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 flex-shrink-0"></i>
+                            <span class="text-sm">{{PRICING_PLAN_2_FEATURE_2}}</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 flex-shrink-0"></i>
+                            <span class="text-sm">{{PRICING_PLAN_2_FEATURE_3}}</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 flex-shrink-0"></i>
+                            <span class="text-sm">{{PRICING_PLAN_2_FEATURE_4}}</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-400 flex-shrink-0"></i>
+                            <span class="text-sm">{{PRICING_PLAN_2_FEATURE_5}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Grid Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4">{{BENTO_TITLE}}</h2>
+            <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto">{{BENTO_SUBTITLE}}</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Large Feature -->
+                <div class="md:col-span-2 md:row-span-2 bg-gray-800/50 border border-gray-700 rounded-2xl p-8 flex flex-col justify-between min-h-[400px]">
+                    <div>
+                        <div class="w-12 h-12 bg-green-400/10 rounded-xl flex items-center justify-center mb-6">
+                            <i data-lucide="rocket" class="w-6 h-6 text-green-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">{{BENTO_FEATURE_1_TITLE}}</h3>
+                        <p class="text-gray-400">{{BENTO_FEATURE_1_DESCRIPTION}}</p>
+                    </div>
+                    <div class="mt-8 bg-gray-700/50 rounded-xl overflow-hidden aspect-video">
+                        <img id="bento-img-1" src="https://placehold.co/800x450/1a1a1a/444444?text=Feature" alt="Feature" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Stats Box 1 -->
+                <div class="bg-gray-800/50 border border-gray-700 rounded-2xl p-8 flex flex-col justify-center">
+                    <div class="text-5xl font-bold text-green-400 mb-2">{{BENTO_STAT_1_NUMBER}}</div>
+                    <p class="text-gray-400">{{BENTO_STAT_1_LABEL}}</p>
+                </div>
+
+                <!-- Stats Box 2 -->
+                <div class="bg-gray-800/50 border border-gray-700 rounded-2xl p-8 flex flex-col justify-center">
+                    <div class="text-5xl font-bold text-green-400 mb-2">{{BENTO_STAT_2_NUMBER}}</div>
+                    <p class="text-gray-400">{{BENTO_STAT_2_LABEL}}</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="md:col-span-1 bg-gray-800/50 border border-gray-700 rounded-2xl p-8">
+                    <div class="w-12 h-12 bg-green-400/10 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="layers" class="w-6 h-6 text-green-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">{{BENTO_FEATURE_2_TITLE}}</h3>
+                    <p class="text-gray-400 text-sm">{{BENTO_FEATURE_2_DESCRIPTION}}</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="md:col-span-2 bg-gray-800/50 border border-gray-700 rounded-2xl p-8 flex items-center gap-6">
+                    <div class="flex-shrink-0 bg-gray-700/50 rounded-xl overflow-hidden w-32 h-32">
+                        <img id="bento-img-2" src="https://placehold.co/200x200/1a1a1a/444444?text=Icon" alt="Feature" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3">{{BENTO_FEATURE_3_TITLE}}</h3>
+                        <p class="text-gray-400 text-sm">{{BENTO_FEATURE_3_DESCRIPTION}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Grid -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4">{{TESTIMONIALS_TITLE}}</h2>
+            <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto">{{TESTIMONIALS_SUBTITLE}}</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-800/50 border border-gray-700 rounded-2xl p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-gray-700 rounded-full"></div>
+                        <div>
+                            <div class="font-semibold text-sm">{{TESTIMONIAL_1_NAME}}</div>
+                            <div class="text-xs text-gray-400">{{TESTIMONIAL_1_ROLE}}</div>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-3">
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-400 text-sm">{{TESTIMONIAL_1_TEXT}}</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-800/50 border border-gray-700 rounded-2xl p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-gray-700 rounded-full"></div>
+                        <div>
+                            <div class="font-semibold text-sm">{{TESTIMONIAL_2_NAME}}</div>
+                            <div class="text-
+
